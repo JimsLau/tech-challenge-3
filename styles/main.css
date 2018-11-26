@@ -725,8 +725,7 @@ footer {
   .footerForm input[type="email"] {
     padding: 5px 0 5px 10px;
     font-style: italic;
-    font-family: "Playfair Display", serif;
-    font-weight: 700; }
+    font-family: "Playfair Display", serif; }
   .footerForm input[type="submit"] {
     cursor: pointer;
     background-color: #e40015;
