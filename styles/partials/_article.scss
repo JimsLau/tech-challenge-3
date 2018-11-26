@@ -1,0 +1,147 @@
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+
+article {
+	margin: 0 auto;
+	display: block;
+	align-items: center;
+	justify-content: center;
+		h1 {
+			font-size: 25px;
+		}
+		p {
+			font-size: 14px;
+		}
+		img {
+			position: relative;
+			width: 100%;
+		}
+}
+
+.date {
+	position: relative;
+	background-color: $HackerRed;
+	color: $primary;
+	display: block;
+	text-align: center;
+	width: 110px;
+	height: 27px;
+	margin-left: 250px;
+	top: -20px;
+	right: 95px;
+	z-index: 2;
+		h3 {
+			padding: 2px;
+			font-weight: 400;
+			margin: 0;
+		}
+}
+
+.info {
+	width: 150px;
+	margin-left: 10px;
+	padding-bottom: 3px;
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 700;
+			color: $HackerRed;
+			transition: $transition;
+				&:hover{
+					cursor: pointer;
+					opacity: 0.4;
+					color: $accent;
+				}
+	}
+}
+
+.WebCulture_wrapper,
+.JavaExp_wrapper
+	 {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+		h1 {
+			margin-top: 0;
+		}
+}
+
+.WebDev {
+	max-width: 380px;
+	height: 100%;
+	margin: 20px auto;
+	position: relative;
+	background-color: $secondary;
+		h1, p {
+			margin-left: 10px;
+		}
+		.info {
+			padding-top: 5px;
+		}
+}
+
+.TeamCulture,
+.JavaScript,
+.StudentExp 
+	{
+	max-width: 388px;
+	margin: 20px auto;
+	background-color: $secondary;
+		h1, p {
+			margin-left: 10px;
+		}
+}
+
+.description {
+	position: relative;
+	padding: 0 10px 10px 10px;
+}
+
+/* --------------------- Media Query ---------------------*/
+
+@media screen and (min-width: $bp-mobile-sm) {
+	.date {
+		right: 30px;
+	}
+}
+
+@media screen and (min-width: $bp-sm) {
+	.WebDev {
+		min-width: 380px;
+	}
+	.TeamCulture,
+	.JavaScript,
+	.StudentExp
+		{
+			min-width: 388px;
+		}
+	.date {
+		right: 20px;
+	}
+
+}
+
+@media screen and (min-width: $bp-lg) {
+	article {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	}
+	.WebCulture_wrapper,
+	.JavaExp_wrapper {
+		display: flex;
+		max-width: 850px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+

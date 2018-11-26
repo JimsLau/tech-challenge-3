@@ -1,0 +1,29 @@
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+
+/* Fonts */
+$header-font: 'Playfair Display', serif;
+$body-font: 'Cabin', sans-serif;
+$cursive-font:'Niconne', cursive;
+
+/* Colour Codes */
+$primary: rgb(255,255,255);
+$secondary: rgb(246,247,249);
+$accent: rgb(84,83,83);
+$dark-accent: rgb(35,31,31);
+$HackerRed:rgb(228,0,21);
+
+/* Transition */
+$transition: 0.5s ease-in-out;
+
+
+/*Media Query*/
+$bp-mobile-sm: 375px;
+$bp-sm: 425px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xlg: 1440px;

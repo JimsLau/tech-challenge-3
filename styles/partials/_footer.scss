@@ -1,0 +1,195 @@
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+
+footer {
+	color: $primary;
+	padding: 40px 20px 0px 20px;
+	background-color: $accent;
+
+}
+
+.topfoot {
+	width: 100%;
+	display: block;
+	justify-content: center;
+	padding-bottom: 20px;
+		h3 {
+			margin-top: 0;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-family: $body-font;
+		}
+}
+
+/* HackerYou briefing in footer */
+.footerColumn1 {
+		p {
+			padding-right: 40px;
+			max-width: 500px;
+		}
+}
+
+/* Nav list in footer */
+.footerColumn2  {
+	li a {
+	color: $primary;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: $transition;
+	&:hover {
+		opacity: 0.4;
+	}
+	}
+	ul {
+		margin-top: 0;
+		padding-left: 0;
+		padding-bottom: 20px;
+		list-style: none;
+		font-weight: 700;
+			li {
+				padding-bottom: 5px;
+			}
+	}
+}
+
+/* Subscribe info and form */
+.footerColumn3 {
+	h3, p {
+		padding-bottom: 5px;
+		margin: 0 auto;
+	}
+}
+
+.footerForm {
+	width: 100%;
+	position: relative;
+	form {
+		width: 100%;
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+	input[type="email"] {
+		padding: 5px 0 5px 10px;
+		font-style: italic;
+		font-family: $header-font;
+		font-weight: 700;
+	}
+	input[type="submit"] {
+		cursor: pointer;
+		background-color: $HackerRed;
+		text-transform: uppercase;
+		font-family: $body-font;
+		color: $primary;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		border: none;
+		padding: 7px 20px 7px 20px;
+		margin-left: 3px;
+	}
+}
+
+.bottomfoot {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	background-color: $dark-accent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.copyright {
+	padding-left: 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.socials {
+	padding-right: 20px;
+}
+
+.socials span {
+	color: $primary;
+	padding-left: 10px;
+	transition: $transition;
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+/* --------------------- Media Query --------------------- */
+
+@media screen and (min-width: $bp-mobile-sm) {
+	.footerForm {
+		input[type="email"] {
+			padding-right: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: $bp-sm) {
+	.footerForm {
+		input[type="email"] {
+			padding-right: 80px;
+		}
+	}
+}
+
+@media screen and (min-width: $bp-md) {
+	footer {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	.footerColumn2 {
+		padding-right: 80px;
+	}
+
+	.footerColumn3 {
+		padding-right: 70px;
+	}
+	.footerForm {
+		input[type="email"] {
+			padding: 7px 60px 7px 10px;
+		}
+	}
+	.copyright {
+	padding-left: 70px;
+	font-size: 15px;
+	}
+	.socials {
+	padding-right: 100px;
+	}
+
+}
+
+@media screen and (min-width: $bp-lg) {
+	.topfoot {
+		display: inline-flex;
+		justify-content: space-between;
+	}
+
+	.footerColumn3 {
+		padding-right: 0;
+	}
+	.socials {
+		padding-right: 80px;
+	}
+}
+
+@media screen and (min-width: $bp-xlg) {
+	footer {
+		padding-left: 50px;
+	}
+
+	.copyright {
+		padding-left: 50px;
+	}
+}

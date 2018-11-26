@@ -1,0 +1,818 @@
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+/* Fonts */
+/* Colour Codes */
+/* Transition */
+/*Media Query*/
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+body {
+  font-family: "Cabin", sans-serif; }
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px; }
+
+h3 {
+  letter-spacing: 1px; }
+
+p {
+  line-height: 35px; }
+
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 9.5vh;
+  background-color: white;
+  top: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 40px; }
+  header .logo {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 150px;
+    height: 100%; }
+    header .logo a {
+      text-decoration: none;
+      color: inherit;
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      font-weight: 700;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      header .logo a:hover {
+        color: #e40015; }
+  header nav {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0; }
+    header nav a {
+      border-radius: 5px;
+      color: inherit;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      header nav a:hover {
+        opacity: 0.6; }
+    header nav ul {
+      height: 100%;
+      padding-right: 80px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 4px; }
+    header nav ul li {
+      list-style: none;
+      width: auto;
+      padding: 15px 10px; }
+
+/* --------------------- Nav Menu minimized --------------------- */
+.closeMenu,
+.hamburger {
+  cursor: pointer;
+  color: #545353;
+  font-size: 30px;
+  width: 100%;
+  padding-right: 20px;
+  text-align: right; }
+
+.show.menu,
+.show.closeMenu {
+  display: block; }
+
+.hide.hamburger {
+  display: none; }
+
+.menu {
+  display: none;
+  background-color: white; }
+
+.closeMenu {
+  display: none; }
+
+/* --------------------- Media Query --------------------- */
+@media screen and (min-width: 768px) {
+  .hamburger,
+  .closeMenu {
+    display: none; }
+  header nav {
+    top: 5px; }
+  header nav ul {
+    margin-top: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .active {
+    display: block; }
+  .menu {
+    display: block; } }
+
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+.container {
+  position: relative; }
+
+/* Main background image */
+.background {
+  width: 100%;
+  height: auto;
+  padding-top: 8vh; }
+
+.winter2019 {
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: white; }
+
+.winter2019 h1 {
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
+  font-size: 35px; }
+
+.winter2019 p {
+  padding-left: 50px;
+  padding-right: 40px;
+  font-size: 20px; }
+
+/* --------------------- Gallery --------------------- */
+.welcomeGallery {
+  background-color: #f6f7f9;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  min-width: auto;
+  padding-bottom: 60px; }
+
+.welcomeGallery h1 {
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 50px; }
+
+.galleryScroll {
+  background-color: #f6f7f9;
+  margin-top: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 350px; }
+
+.galleryDescription h2 {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  padding-top: 30px; }
+
+.galleryDescription p {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 auto; }
+
+/* --------------------- Flickity Styling --------------------- */
+.flickity-viewport {
+  width: 100%; }
+
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+/* previous/next buttons */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #f6f7f9;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  /* arrow colour */
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .flickity-prev-next-button:hover {
+    background-color: #545353;
+    opacity: 0.4; }
+  .flickity-prev-next-button .flickity-prev-next-button .arrow {
+    fill: black; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+/* page dots */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+/* --------------------- Media Query --------------------- */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .galleryScroll {
+    max-width: 420px; } }
+
+@media screen and (min-width: 768px) {
+  .galleryScroll {
+    max-width: 608px; }
+  .flickity-prev-next-button.previous {
+    left: -60px; }
+  .flickity-prev-next-button.next {
+    right: -60px; } }
+
+@media screen and (min-width: 1024px) {
+  .winter2019 {
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    width: 40%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+    .winter2019 h1 {
+      padding-right: 50px;
+      font-size: 40px; }
+    .winter2019 p {
+      line-height: 40px; } }
+
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+article {
+  margin: 0 auto;
+  display: block;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  article h1 {
+    font-size: 25px; }
+  article p {
+    font-size: 14px; }
+  article img {
+    position: relative;
+    width: 100%; }
+
+.date {
+  position: relative;
+  background-color: #e40015;
+  color: white;
+  display: block;
+  text-align: center;
+  width: 110px;
+  height: 27px;
+  margin-left: 250px;
+  top: -20px;
+  right: 95px;
+  z-index: 2; }
+  .date h3 {
+    padding: 2px;
+    font-weight: 400;
+    margin: 0; }
+
+.info {
+  width: 150px;
+  margin-left: 10px;
+  padding-bottom: 3px; }
+  .info a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #e40015;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
+    .info a:hover {
+      cursor: pointer;
+      opacity: 0.4;
+      color: #545353; }
+
+.WebCulture_wrapper,
+.JavaExp_wrapper {
+  display: block;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+  .WebCulture_wrapper h1,
+  .JavaExp_wrapper h1 {
+    margin-top: 0; }
+
+.WebDev {
+  max-width: 380px;
+  height: 100%;
+  margin: 20px auto;
+  position: relative;
+  background-color: #f6f7f9; }
+  .WebDev h1, .WebDev p {
+    margin-left: 10px; }
+  .WebDev .info {
+    padding-top: 5px; }
+
+.TeamCulture,
+.JavaScript,
+.StudentExp {
+  max-width: 388px;
+  margin: 20px auto;
+  background-color: #f6f7f9; }
+  .TeamCulture h1, .TeamCulture p,
+  .JavaScript h1,
+  .JavaScript p,
+  .StudentExp h1,
+  .StudentExp p {
+    margin-left: 10px; }
+
+.description {
+  position: relative;
+  padding: 0 10px 10px 10px; }
+
+/* --------------------- Media Query ---------------------*/
+@media screen and (min-width: 375px) {
+  .date {
+    right: 30px; } }
+
+@media screen and (min-width: 425px) {
+  .WebDev {
+    min-width: 380px; }
+  .TeamCulture,
+  .JavaScript,
+  .StudentExp {
+    min-width: 388px; }
+  .date {
+    right: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  article {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .WebCulture_wrapper,
+  .JavaExp_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 850px;
+    margin: 0 auto; } }
+
+/*
+Submitted By: James Lau
+Submitted To: techchallenges@hackeryou.com
+Assignment: Tech Challenge 3
+Date Submitted: November 26, 2018
+*/
+footer {
+  color: white;
+  padding: 40px 20px 0px 20px;
+  background-color: #545353; }
+
+.topfoot {
+  width: 100%;
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 20px; }
+  .topfoot h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Cabin", sans-serif; }
+
+/* HackerYou briefing in footer */
+.footerColumn1 p {
+  padding-right: 40px;
+  max-width: 500px; }
+
+/* Nav list in footer */
+.footerColumn2 li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  .footerColumn2 li a:hover {
+    opacity: 0.4; }
+
+.footerColumn2 ul {
+  margin-top: 0;
+  padding-left: 0;
+  padding-bottom: 20px;
+  list-style: none;
+  font-weight: 700; }
+  .footerColumn2 ul li {
+    padding-bottom: 5px; }
+
+/* Subscribe info and form */
+.footerColumn3 h3, .footerColumn3 p {
+  padding-bottom: 5px;
+  margin: 0 auto; }
+
+.footerForm {
+  width: 100%;
+  position: relative; }
+  .footerForm form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0; }
+  .footerForm input[type="email"] {
+    padding: 5px 0 5px 10px;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    font-weight: 700; }
+  .footerForm input[type="submit"] {
+    cursor: pointer;
+    background-color: #e40015;
+    text-transform: uppercase;
+    font-family: "Cabin", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 7px 20px 7px 20px;
+    margin-left: 3px; }
+
+.bottomfoot {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #231f1f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.copyright {
+  padding-left: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.socials {
+  padding-right: 20px; }
+
+.socials span {
+  color: white;
+  padding-left: 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  .socials span:hover {
+    opacity: 0.4; }
+
+/* --------------------- Media Query --------------------- */
+@media screen and (min-width: 375px) {
+  .footerForm input[type="email"] {
+    padding-right: 30px; } }
+
+@media screen and (min-width: 425px) {
+  .footerForm input[type="email"] {
+    padding-right: 80px; } }
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-right: 70px;
+    padding-left: 70px; }
+  .footerColumn2 {
+    padding-right: 80px; }
+  .footerColumn3 {
+    padding-right: 70px; }
+  .footerForm input[type="email"] {
+    padding: 7px 60px 7px 10px; }
+  .copyright {
+    padding-left: 70px;
+    font-size: 15px; }
+  .socials {
+    padding-right: 100px; } }
+
+@media screen and (min-width: 1024px) {
+  .topfoot {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footerColumn3 {
+    padding-right: 0; }
+  .socials {
+    padding-right: 80px; } }
+
+@media screen and (min-width: 1440px) {
+  footer {
+    padding-left: 50px; }
+  .copyright {
+    padding-left: 50px; } }
